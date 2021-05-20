@@ -140,6 +140,10 @@ input[name="r"]{
     margin-left: -40%;
 }
 
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
 /* FIN CAROUSSEL */
 
 .text_banner{
@@ -154,6 +158,7 @@ input[name="r"]{
     text-align: center;
     color: #212121;
     line-height: 1em;
+    text-shadow: -1px -1px white, 1px 1px white;
 }
 
 .com {
