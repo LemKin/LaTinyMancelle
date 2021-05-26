@@ -199,7 +199,7 @@ input[name="r"]{
 }
 header {
     position: fixed;
-    max-width: 1400px;
+    width: 1000px;
     margin: auto;
     padding: 40px 100px;
     z-index: 10000;
@@ -454,6 +454,11 @@ section {
     color: #C0CA33;
     font-weight: 600;
 }
+.back a{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
 .box_art{
     display: flex;
     flex-direction: row;
@@ -466,6 +471,12 @@ section {
 }
 .text_art{
     width: 300px;
+}
+.txt_bold{
+    background-color: #C0CA33;
+    color: white;
+    font-weight: 500;
+    padding: 3px;
 }
 p span {
     color: white;
@@ -483,7 +494,6 @@ p span {
     width: 250px;
     margin: 15px;
 }
-
 .perso .content .box .imgBx img {
     position: absolute;
     margin-top: -50px;
@@ -622,7 +632,9 @@ p span {
 }
 .content{
     text-decoration: none;
+    color: #212121;
 }
+
 
 @media (max-width: 1200px) {
     body {
@@ -646,7 +658,7 @@ p span {
         left: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: right;
         flex-direction: column;
         background: #fff;
     }
@@ -657,6 +669,7 @@ p span {
         color: #111;
         font-size: 1.6em;
     }
+
     .menuToggle {
         position: relative;
         width: 40px;
@@ -724,6 +737,26 @@ p span {
         line-height: 1.5em;
         margin-bottom: 15px;
         font-weight: 300;
+        padding-top: 50px;
+    }
+    .back a{
+        
+    }
+    .article_zoom .content {
+        flex-direction: row;
+    }
+    .article_zoom .content .box_art {
+        width: 250px;
+    }
+    .box_art{
+        flex-direction: column;
+    }
+    .imgBx_art{
+        width: 230px;
+        text-align: center;
+    }
+    .text_art{
+        width: 230px;
     }
     .presse{
         padding-top: 50px;
