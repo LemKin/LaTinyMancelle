@@ -16,6 +16,7 @@ p {
 }
 
 .banner {
+    width: 1000px;
 }
 
 /* CAROUSSEL */
@@ -248,9 +249,6 @@ header .navigation li a:hover {
 section {
     padding: 100px;
 }
-.concept {
-
-}
 .row {
     position: relative;
     width: 100%;
@@ -309,8 +307,6 @@ section {
     width: 100%;
     height: 300px;
 }
-.realisations .content .box_rea .imgBx_rea img {
-}
 .realisations .content .box_rea .text {
     padding: 15px 0 5px;
 }
@@ -359,6 +355,14 @@ section {
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.box_rea{
+    transition: 0.5s;
+    transform: rotateZ(-2deg);
+}
+.box_rea:hover{
+    transform: scale(1.2);
+
 }
 /* FIN CAROUSSEL REA */
 
@@ -418,6 +422,56 @@ section {
     color: #C0CA33;
     font-weight: 600;
 }
+.article_zoom{
+    background-color: #212121;
+    background-size: cover;
+}
+.article_zoom .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.article_zoom .content .box_art {
+    width: 450px;
+    margin: 10px;
+    padding: 40px;
+    background: #fff;
+}
+.article_zoom .content .box_art .text_art {
+    text-align: center;
+}
+.article_zoom .content .box_art .text_art p {
+    color: #666;
+    font-style: italic;
+    text-align: justify;
+}
+.article_zoom .content .box_art .text_art h3 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #C0CA33;
+    font-weight: 600;
+}
+.box_art{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imgBx_art{
+    width: 300px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.text_art{
+    width: 300px;
+}
+p span {
+    color: white;
+    padding: 2px;
+}
+
 .perso .content {
     display: flex;
     justify-content: center;
@@ -566,6 +620,9 @@ section {
     font-weight: 500;
     text-decoration: none;
 }
+.content{
+    text-decoration: none;
+}
 
 @media (max-width: 1200px) {
     body {
@@ -620,14 +677,8 @@ section {
     header.sticky .menuToggle {
         filter: invert(1);
     }
-    .banner {
-        height: 100%;
-    }
-    .caroussel {
-        top: -100px;
-    }
-    .accroche {
-        margin-top: -500px;
+    #banner {
+        display: none;
     }
     section {
         padding: 20px;
@@ -650,6 +701,9 @@ section {
         height: 300px;
         margin-top: 20px;
     }
+    .concept {
+        padding-top: 50px;
+    }
     .perso .content {
         margin-top: 20px;
     }
@@ -659,6 +713,9 @@ section {
     .perso .content .box .imgBx {
         height: 260px;
     }
+    .perso img {
+        margin-top: -50px;
+    }
     .title {
         text-align: center;
     }
@@ -667,6 +724,9 @@ section {
         line-height: 1.5em;
         margin-bottom: 15px;
         font-weight: 300;
+    }
+    .presse{
+        padding-top: 50px;
     }
     .presse .content .box {
         margin: 10px;
@@ -678,9 +738,4 @@ section {
         margin-bottom: 30px;
     }
 }
-@media (max-width 480px) {
-    .banner .content h2 {
-        font-size: 2.2em;
-        color: #fff;
-    }
-}
+
