@@ -246,6 +246,15 @@ header.sticky .navigation li a {
 header .navigation li a:hover {
     color: #C0CA33;
 }
+.fb{
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    transition: 0.5s;
+}
+.fb:hover{
+    transform: scale(1.2);
+}
 section {
     padding: 100px;
 }
