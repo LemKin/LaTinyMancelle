@@ -16,7 +16,7 @@
             <li><a href="#concept" onclick="toggleMenu();">Concept</a></li>
             <li><a href="#realisations" onclick="toggleMenu();">Réalisations</a></li>
             <li><a href="#articles" onclick="toggleMenu();">Articles</a></li>
-            <li><a href="#perso" onclick="toggleMenu();">Qui sommes nous?</a></li>
+            <li><a href="#partners" onclick="toggleMenu();">Partenaires</a></li>
             <li><a href="#presse" onclick="toggleMenu();">La Presse en parle!</a></li>
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
@@ -66,19 +66,26 @@
                     </div>
                 </div>
                 <div class="text_banner">
-                    <h2 class="accroche">Partez à l'aventure avec votre Tiny House !</h2>
+                    <h1 class="accroche">Partez à l'aventure avec votre Tiny House !</h2>
                     <p class="com">Une Tiny House, petite maison mobile et pratique. En forêt, au bord de la rivière, en campagne ou tout simplement dans votre jardin.<br><span class="tm">La Tiny Mancelle</span> est le constructeur qui va réaliser vôtre rêve.</p>
                     <div class="game">Choisissez votre Tiny House !</div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1 class="pub">1er Constructeur de Tiny House de la Sarthe !</h1>
-            <div class="pub_box"></div>
-        </section>
+        <aside>
+            <div class="pub_container">
+                <div class="pub_card">
+                    <div class="pub_face">
+                        <video autoplay muted loop width=400 height=225>
+                            <source src="vid/Tiny_Mancelle.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </aside>
 
-        <section class="concept" id="concept">
+        <article class="concept" id="concept">
             <div class="row">
                 <div class="col50">
                     <h2 class="titleText"><span>C</span>oncept</h2>
@@ -88,7 +95,7 @@
                 </div>
                 <div class="col50">
                     <div class="imgBx">
-                        <img src="img/img1.jpg">
+                        <img src="img/CONCEPT/sebastien leparc tiny mancelle tiny house le mans 72.jpg">
                     </div>
                 </div>
             </div>
@@ -133,9 +140,21 @@
                     </div>
                 </div>
             </div>
-        </section>
+            <aside class="perso" id="perso">
+                <div class="row">
+                    <div class="col50">
+                        <p>L'atelier de <span class="tm">La Tiny Mancelle</span>  est situé près du Mans (72).<br>De grands espaces intérieurs et extérieurs permettent d'accueillir tout types de projets.</p>
+                    </div>
+                    <div class="col50">
+                        <div class="perso_img">
+                            <img src="img/PERSO/atelier tiny mancelle 72.jpg">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </article>
 
-        <section class="realisations" id="realisations">
+        <article class="realisations" id="realisations">
             <div class="title">
                 <h2 class="titleText"><span>R</span>éalisations</h2>
                 <p>Petite sélection de modèles réalisés dans notre atelier : La Tiny Mancelle.</p>
@@ -261,15 +280,15 @@
                         </div>
                     </div>
                 </div>
-        </section>
+        </article>
 
-        <section class="articles" id="articles">
+        <article class="articles" id="articles">
             <div class="title white">
                 <h2 class="titleText"><span>A</span>rticles</h2>
                 <p>Nos documents d'informations autours des Tiny House.</p>
             </div>
             <div class="content">
-                <a href="art-Teardrop.html">
+                <a class="clic" href="art-Teardrop.html">
                     <div class="box">
                         <h3>Nouveau !<br>Les TearDrop</h3>
                         <div class="imgBx">
@@ -280,52 +299,70 @@
                         </div>
                     </div>
                 </a>
-                <div class="box">
-                    <h3>Construction :<br>les Étapes</h3>
-                    <div class="imgBx">
-                        <img src="img/ARTICLES/etapes/etape3.jpg">
+
+                <a class="clic" href="">
+                    <div class="box">
+                        <h3>Construction :<br>les Étapes</h3>
+                        <div class="imgBx">
+                            <img src="img/ARTICLES/etapes/etape3.jpg">
+                        </div>
+                        <div class="text">
+                            <p>Découvrez toutes les différentes étapes de construction d'une Tiny House.</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p>Découvrez toutes les différentes étapes de construction d'une Tiny House.</p>
+                </a>
+
+                <a class="clic" href="">
+                    <div class="box">
+                        <h3>La Tiny House<br>c'est Quoi ?</h3>
+                        <div class="imgBx">
+                            <img src="img/ARTICLES/quoi/quoi1.jpg">
+                        </div>
+                        <div class="text">
+                            <p>Origines, détails techniques... Les Tiny n'auront plus de secret pour vous!</p>
+                        </div>
                     </div>
+                </a>
+
+                <a class="clic" href="">
+                    <div class="box">
+                        <h3>La Tiny House<br>pour Qui ?</h3>
+                        <div class="imgBx">
+                            <img src="img/ARTICLES/qui/qui1.jpg">
+                        </div>
+                        <div class="text">
+                            <p>Se rapprocher de la nature, devenir éco-responsable, changer son mode de vie...</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </article>
+
+        <article class="partners" id="partners">
+            <div class="part">
+                <div class="col50">
+                    <h2 class="titleText">Nos <span>P</span>artenaires</h2>
+                    <p>Le Partenariat est un tremplin vers le succès et permet aussi d'imaginer des projets complètement hors du commun!</p>
                 </div>
-                <div class="box">
-                    <h3>La Tiny House<br>c'est Quoi ?</h3>
-                    <div class="imgBx">
-                        <img src="img/ARTICLES/quoi/quoi1.jpg">
+                <div class="part_container">
+                    <div class="part_art">
+                        <img src="img/PARTENAIRES/logo_runway.jpg">
+                        <h3>Runway Shower</h3>
+                        <p>Des modules éco-conçu "Douches/Vestiaires/Casiers pour favoriser la pratique du sport en entreprise et faciliter le quotidien des sportifs en plein air. Sécurisé, Low-Tech, et Itinérant Run Shower est désormais aussi implanté dans des Tiny House de la Tiny Mancelle !</p>
+                        <img src="img/PARTENAIRES/run2.jpg">
                     </div>
-                    <div class="text">
-                        <p>Origines, détails techniques... Les Tiny n'auront plus de secret pour vous!</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <h3>La Tiny House<br>pour Qui ?</h3>
-                    <div class="imgBx">
-                        <img src="img/ARTICLES/qui/qui1.jpg">
-                    </div>
-                    <div class="text">
-                        <p>Se rapprocher de la nature, devenir éco-responsable, changer son mode de vie...</p>
+                    <div class="part_art">
+                        <img src="img/PARTENAIRES/logo_hamosphere.jpg">
+                        <h3>Hamo Sphère</h3>
+                        <p>Réalisation d'un cabinet d'architecture avec un assemblage de 2 Tiny Houses ! Plus d'espace grâce à ce nouveau concept "Bureau" que l'on peut imaginer aussi pour une habitation.</p>
+                        <img src="img/PARTENAIRES/archi2.jpg">
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <section class="perso" id="perso">
-            <div class="row">
-                <div class="col50">
-                    <h2 class="titleText"><span>Q</span>ui sommes nous ?</h2>
-                    <p>L'atelier de <span class="tm">La Tiny Mancelle</span>  est situé près du Mans (72).<br>De grands espaces intérieurs et extérieurs permettent d'accueillir tout types de projets.</p>
-                    <img src="img/Sarthe.png">
-                </div>
-                <div class="col50">
-                    <div class="imgBx">
-                        <img src="img/PERSO/atelier constructeur tiny house tiny mancelle.jpg">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-            <section class="presse" id="presse">
+        <article class="presse" id="presse">
             <div class="title white">
                 <h2 class="titleText">La <span>P</span>resse en parle</h2>
                 <p>Quelques articles de journaux autours de La Tiny Mancelle.</p>
@@ -359,9 +396,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <section class="contact" id="contact">
+        <article class="contact" id="contact">
             <div class="title">
                 <h2 class="titleText"><span>C</span>ontact</h2>
                 <p>Un projet ? Des questions?<br>Nous sommes à votre disposition pour vous répondre.</p>
@@ -381,7 +418,8 @@
                     <input type="submit" placeholder="Send">
                 </div>
             </div>
-        </section>
+            <div class="fb_contact"><a href="https://www.facebook.com/latinymancelle" target="_blank"><img src="img/fb.png"></a></div>
+        </article>
     </main>
 
     <footer>
