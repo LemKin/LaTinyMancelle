@@ -492,7 +492,7 @@ h3
 
 /* PERSO */
 .perso {
-    width: 800px;
+    width: auto;
     padding: 30px;
     margin: auto;
     background-color: #212121;
@@ -705,6 +705,7 @@ h3
     color: #C0CA33;
     font-weight: 600;
 }
+
 .back a{
     color: white;
     font-size: 2em;
@@ -739,7 +740,8 @@ p span {
 /* PARTENAIRES */
 
 .partners {
-
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
 
 .part {
@@ -821,6 +823,26 @@ p span {
     color: #C0CA33;
     font-weight: 600;
 }
+
+.presse_zoom {
+    background-color: #212121;
+}
+.presse_zoom .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.presse_zoom .content .box_art {
+    width: 650px;
+    margin: 10px;
+    padding: 40px;
+    background: #fff;
+}
+
+.presse_zoom .content .box_art .imgBx_art {
+    width: auto;
+}
+
 /* FIN PRESSE */
 
 
@@ -988,9 +1010,9 @@ p span {
     }
     .pub_container {
         margin-top: 68px;
-        left: 20%;
         transform: rotateZ(0deg);
         width: 60%;
+        margin-left: 25%;
     }
     
     .pub_container .pub_card .pub_face {
