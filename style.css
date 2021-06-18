@@ -210,6 +210,11 @@ input[name="r"]{
 .rea {
     margin-left: 64%;
 }
+.logo{
+    width: 80px;
+    position: absolute;
+    top: 0px;
+}
 header {
     position: fixed;
     width: 1000px;
@@ -289,6 +294,7 @@ section {
     color: #111;
     font-size: 2em;
     font-weight: 300;
+    text-align: center;
 }
 .titleText span {
     color: #C0CA33;
@@ -874,16 +880,12 @@ p span {
 
 
 /* CONTACT */
-.contact {
-    background: url(img/bg3.jpg);
-    background-size: cover;
-}
 .contactForm {
     padding: 75px 50px;
     background: #fff;
     box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    width: 400px;
     max-width: 500px;
-    margin-top: 50px;
 }
 .contactForm h3 {
     color: #111;
@@ -922,25 +924,22 @@ p span {
     cursor: pointer;
 }
 .fb_contact {
-    position: absolute;
-    background-color: #C0CA33;
-    width: 60px;
-    height: 60px;
-    border-radius: 10%;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    left: 70%;
-    margin-top: -500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.fb_contact_txt{
+    text-align: center;
+}
+.fb_contact_log{
+    text-align: center;
 }
 .fb_contact_art {
-    background-color: #C0CA33;
-    padding: 1px;
-    width: 60px;
-    height: 60px;
-    border-radius: 10%;
-    transition: 0.5s;
     text-align: center;
     margin-top: 100px;
 }
@@ -948,6 +947,47 @@ p span {
     text-decoration: none;
     color: #C0CA33;
     cursor: pointer;
+}
+.container_visited{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card_visited{
+    top: 100px;
+    text-align: center;
+    width: 270px;
+    padding: 7px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+.tel, .mail{
+    font-size: 1.5em;
+    color: #C0CA33;
+    padding-right: 5px;
+}
+.cont_msg{
+    text-align: left;
+    margin-top: -15px;
+}
+.adress_msg{
+    display: flex;
+}
+.adress_msg_A{
+    flex: 2;
+    text-align: left;
+    padding-left: 5px;
+}
+.adress_msg_B{
+    flex: 1;
+    padding: 7px;
+    background-color: #212121;
+    color: #fff;
+    font-size: 0.8em;
+    align-self: center;
+}
+.card_visited img{
+    width: 90%;
 }
 /* FIN CONTACT */
 
@@ -977,6 +1017,10 @@ p span {
 @media (max-width: 1200px) {
     body {
         max-width: 1200px;
+    }
+    .logo img{
+        width: 100px;
+        left: 50%;
     }
     header {
         width: 100%;
@@ -1013,7 +1057,7 @@ p span {
         position: relative;
         width: 40px;
         height: 40px;
-        right: 30px;
+        right: -320px;
         background: url(img/menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
@@ -1065,9 +1109,6 @@ p span {
     .row .col50 .imgBx {
         height: 300px;
         margin-top: 20px;
-    }
-    .concept {
-        padding-top: 130px;
     }
     .container {
         width: auto;

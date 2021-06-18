@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">La Tiny Mancelle<span>.</span></a>
+        <a href="#" class="logo"><img src="img/logo/logo.png" alt="logo La Tiny Mancelle" /></a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
             <li><a href="#concept" onclick="toggleMenu();">Concept</a></li>
@@ -20,7 +20,7 @@
             <li><a href="#presse" onclick="toggleMenu();">La Presse en parle!</a></li>
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
-        <div class="fb"><a href="https://www.facebook.com/latinymancelle" target="_blank"><img src="img/fb.png"></a></div>
+        <div class="fb"><a href="https://www.facebook.com/latinymancelle" target="_blank"><img src="img/logo/logo_fb.png"></a></div>
     </header>
 
     <main>
@@ -66,25 +66,12 @@
                     </div>
                 </div>
                 <div class="text_banner">
-                    <h1 class="accroche">Partez à l'aventure avec votre Tiny House !</h2>
+                    <h1 class="accroche">1er Constructeur de Tiny House de la Sarthe !</h2>
                     <p class="com">Une Tiny House, petite maison mobile et pratique. En forêt, au bord de la rivière, en campagne ou tout simplement dans votre jardin.<br><span class="tm">La Tiny Mancelle</span> est le constructeur qui va réaliser vôtre rêve.</p>
                     <div class="game">Choisissez votre Tiny House !</div>
                 </div>
             </div>
         </section>
-
-        <aside>
-            <div class="pub_container">
-                <div class="pub_card">
-                    <div class="pub_face">
-                        <video controls autoplay muted loop width=400 height=225 preload="auto">
-                            <source src="vid/Tiny_Mancelle.mp4" type="video/mp4">
-                            <source src="vid/Tiny_Mancelle.ogg" type="video/ogg">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </aside>
 
         <article class="concept" id="concept">
             <div class="row">
@@ -340,9 +327,10 @@
             </div>
         </article>
 
+
         <article class="partners" id="partners">
             <div class="part">
-                <div class="col50">
+                <div class="title">
                     <h2 class="titleText">Nos <span>P</span>artenaires</h2>
                     <p>Le Partenariat est un tremplin vers le succès et permet aussi d'imaginer des projets complètement hors du commun!</p>
                 </div>
@@ -408,26 +396,47 @@
         </article>
 
         <article class="contact" id="contact">
-            <div class="title">
-                <h2 class="titleText"><span>C</span>ontact</h2>
-                <p>Un projet ? Des questions?<br>Nous sommes à votre disposition pour vous répondre.</p>
+            
+                <div class="title">
+                    <h2 class="titleText"><span>C</span>ontact</h2>
+                    <p>Un projet ? Des questions?<br>Nous sommes à votre disposition pour vous répondre.</p>
+                </div>
+
+            
+            <div class="container_visited">
+
+                <div class="contactForm">                    
+                    <h3>Formulaire de contact</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Prénom et Nom">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" placeholder="Send">
+                    </div>
+                </div>
+
+                <div class="card_visited">
+                    <h3>Sébastien LEPARC</h3>
+                    <p class="cont_msg"><i class="fas fa-phone-square-alt tel"></i>06 79 35 20 38</p>
+                    <p class="cont_msg"><i class="fas fa-envelope-square mail"></i>latinymancelle@gmail.com</p>
+                    <div class="adress_msg">
+                        <p class="adress_msg_A">La Tiny Mancelle<br>Les Niveteries<br>72380 La Guierche</p>
+                        <p class="adress_msg_B">Merci de prendre RDV avant de me rendre visite.</p>
+                    </div>
+                    <img src="img/logo/logo-SL.png" alt="logo La Tiny Mancelle" />
+                </div>
+                <div class="fb_contact">
+                    <p class="fb_contact_txt">Suivez-nous<br>sur FaceBook</p>
+                    <a class="fb_contact_log" href="https://www.facebook.com/latinymancelle" target="_blank"><img src="img/logo/logo_fb.png"></a>
+                </div>
             </div>
-            <div class="contactForm">
-                <h3>Formulaire de contact</h3>
-                <div class="inputBox">
-                    <input type="text" placeholder="Prénom et Nom">
-                </div>
-                <div class="inputBox">
-                    <input type="text" placeholder="Email">
-                </div>
-                <div class="inputBox">
-                    <textarea placeholder="Message"></textarea>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" placeholder="Send">
-                </div>
-            </div>
-            <div class="fb_contact"><a href="https://www.facebook.com/latinymancelle" target="_blank"><img src="img/fb.png"></a></div>
+
         </article>
     </main>
 
