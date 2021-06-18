@@ -721,6 +721,12 @@ h3
     margin-top: 15px;
     padding: 10px;
 }
+.imgBx_art img{
+    transition: 0.5s;
+}
+.imgBx_art img:hover{
+    transform: scale(1.5);
+}
 .text_art{
     width: 300px;
 }
@@ -731,9 +737,30 @@ h3
     padding: 3px;
 }
 p span {
-    color: white;
-    padding: 2px;
+    color: #C0CA33;
+    font-weight: 500;
 }
+.art_text_up{
+    margin-top: -10px;
+}
+.card_art{
+    text-align: left;
+    color: #fff;
+    font-size: 0.9em;
+    background-color: #C0CA33;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+.title_card_art{
+    color: #212121;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
 /* FIN ARTICLES */
 
 
